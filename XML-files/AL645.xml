@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_enrich.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../Applications/Oxygen%20XML%20Editor/frameworks/tei/xml/tei/custom/schema/relaxng/tei_DALE_2.1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../Applications/Oxygen%20XML%20Editor/frameworks/tei/xml/tei/custom/schema/relaxng/tei_DALE_2.1.rng type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="AL645" xml:lang="la">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt xml:lang="en">
+                <title>A Digital Edition of Aristoteles Latinus Codices Pars Prior, 645</title>
+                <author>G. Lacombe, A. Birkenmajer, M. Dulong, A. Franceschini</author>
+                <sponsor>KU Leuven, Institute of Philosophy</sponsor>
+                <respStmt>
+                    <resp>Conversion to TEI P5 3.5.0 by</resp>
+                    <persName ref="contrin:CVDM">Courtney Van de Mosselaer</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt xml:lang="en">
+                <publisher>Aristoteles Latinus</publisher>
+                <availability n="cc-by" status="restricted">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/legalcode">Creative
+                        Commons Attribution 4.0 Unported (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Lacombe, G.</author>
+                        <author>Birkenmajer, A.</author>
+                        <author>Dulong, M.</author>
+                        <author>Franceschini, E.</author>
+                        <title level="m">Aristoteles Latinus Codices Pars Prior</title>
+                        <respStmt>
+                            <resp>Sponsor</resp>
+                            <orgName>Union Académique Internationale</orgName>
+                        </respStmt>
+                        <imprint>
+                            <publisher>La Libreria dello Stato</publisher>
+                            <pubPlace>Roma</pubPlace>
+                            <date when="1939">1939</date>
+                        </imprint>
+                        <extent>763 pp.</extent>
+                        <citedRange unit="page">548</citedRange>
+                    </monogr>
+                    <series>
+                        <title level="s">Aristoteles Latinus Codices</title>
+                        <biblScope unit="part">Pars Prior</biblScope>
+                    </series>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc xml:lang="en">
+            <listPrefixDef>
+                <prefixDef ident="persin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/persons.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;persin&quot;
+                        point to person elements in the project's persons.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="placin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/places.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;placin&quot;
+                        point to place elements in the project's places.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="contrin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/contributors.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;contrin&quot;
+                        point to person elements in the project's contributors.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="persin" matchPattern="([a-z]+)"
+                    replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/persons.html#$1">
+                    <p>Private URIs with the prefix "persin" can be converted to point to a fragment on
+                        the Personsindex page of the project Website.</p>
+                </prefixDef>
+                <prefixDef ident="placin" matchPattern="([a-z]+)"
+                    replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/places.html#$1">
+                    <p>Private URIs with the prefix "placin" can be converted to point to a fragment on
+                        the Placesindex page of the project Website.</p>
+                </prefixDef>
+                <prefixDef ident="contrin" matchPattern="([a-z]+)" replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/contributors.html#$1">
+                    <p>Private URIs with the prefix &quot;contrin&quot; can be converted
+                        to point to a fragment on the contributors page of the project
+                        Website.</p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc xml:lang="en">
+            <change when="2023-01-30" who="contrin:CVDM">Record created on 30 Jan 2023 by Courtney Van de Mosselaer.</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url=""/>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc xml:id="645" xml:lang="la">
+                    <msIdentifier xml:lang="fr">
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque nationale</repository>
+                        <idno>lat. 14724</idno>
+                        <altIdentifier type="former">
+                            <country/>
+                            <settlement/>
+                            <repository/>
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>
+                        <title type="desc"/>
+                    </head>
+                    <msContents>
+                        <msItem n="1">
+                            <locus from="001r" to="137r">ff. 1r-137r</locus>
+                            <title type="sub">De Animalibus</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:guillelmusdemorbeka">Guillelmus de Morbeka</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="person">Tr. Guillelmi.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p/>
+                        <objectDesc form="codex">
+                            <supportDesc material="membr">
+                                <support>
+                                    <p><material>membraneus</material></p>
+                                </support>
+                                <extent>ff. &#8545; + 139
+                                    <dimensions scope="all" type="leaf" unit="mm">
+                                        <height>330</height>
+                                        <width>225</width>
+                                    </dimensions>
+                                </extent>
+                                <collation>
+                                    <p/>
+                                </collation>
+                                <condition>
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="2" streams="1">
+                                    <p>binis columnis</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p>Codex ab uno librario gallico, <locus from="135" to="137">ff. 135-137</locus> exceptis, eleganter exaratus sed tantum in initio sedulo emendatus.</p>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="paratext"><p>Tituli in summis paginis litteris rubris alternatim et caeruleis descripti.</p></decoNote>
+                            <decoNote type="initial"><p>Litterae initiales minores iisdem coloribus, maiores autem variis depictae.</p></decoNote>
+                        </decoDesc>
+                        <additions>
+                            <p>In marginibus proferuntur concordantiae tractatus Alberti De Animalibus.</p>
+                            <p>Liber X suo loco deest, ut in pluribus codicibus, quem manus recentior in fine transcripsit.</p>
+                            <p><locus from="062" to="062">f. 62</locus> indicavit rubricator: <quote>Hic immediate debet incipere liber decimus De Hystoriis Animalium, qui sic incipit: Procedente autem etate</quote>.</p>
+                            <p><locus from="137" to="137">f. 137</locus>: <quote>Ego <persName ref="persin:petrusdeverona">Petrus de Verona</persName> vendidi presentem librum abbati et conventui <orgName>sancti Victoris</orgName> juxta <placeName>Parisius</placeName>, precio II scutorum, que michi persolvit frater <persName ref="persin:johanneslamasse">Johannes Lamasse</persName>, prior dicti loci, unde promitto sibi defendere et guarentizare, teste signo meo manuali, hoc die <date when="1422-08-03">IIIa augusti millesimo CCCCXXII</date>. P. Veron&lt;ensis&gt;</quote>.</p>
+                        </additions>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>
+                                <origDate notAfter="1400" notBefore="1201">saec. XIII-XIV</origDate>
+                                <origPlace/>
+                            </p>
+                        </origin>
+                        <provenance>
+                            <p>Codex enim olim <orgName>Sancti Victoris</orgName>, 333.</p>
+                        </provenance>
+                        <acquisition>
+                            <p/>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo xml:lang="en">
+                            <recordHist/>
+                        </adminInfo>
+                        <listBibl>
+                            <bibl xml:lang="en"/>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </listBibl>
+        </body>
+    </text>
+</TEI>

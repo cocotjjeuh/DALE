@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_enrich.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../Applications/Oxygen%20XML%20Editor/frameworks/tei/xml/tei/custom/schema/relaxng/tei_DALE_2.1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../Applications/Oxygen%20XML%20Editor/frameworks/tei/xml/tei/custom/schema/relaxng/tei_DALE_2.1.rng type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="AL625" xml:lang="la">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt xml:lang="en">
+                <title>A Digital Edition of Aristoteles Latinus Codices Pars Prior, 625</title>
+                <author>G. Lacombe, A. Birkenmajer, M. Dulong, A. Franceschini</author>
+                <sponsor>KU Leuven, Institute of Philosophy</sponsor>
+                <respStmt>
+                    <resp>Conversion to TEI P5 3.5.0 by</resp>
+                    <persName ref="contrin:CVDM">Courtney Van de Mosselaer</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt xml:lang="en">
+                <publisher>Aristoteles Latinus</publisher>
+                <availability n="cc-by" status="restricted">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/legalcode">Creative
+                        Commons Attribution 4.0 Unported (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Lacombe, G.</author>
+                        <author>Birkenmajer, A.</author>
+                        <author>Dulong, M.</author>
+                        <author>Franceschini, E.</author>
+                        <title level="m">Aristoteles Latinus Codices Pars Prior</title>
+                        <respStmt>
+                            <resp>Sponsor</resp>
+                            <orgName>Union Académique Internationale</orgName>
+                        </respStmt>
+                        <imprint>
+                            <publisher>La Libreria dello Stato</publisher>
+                            <pubPlace>Roma</pubPlace>
+                            <date when="1939">1939</date>
+                        </imprint>
+                        <extent>763 pp.</extent>
+                        <citedRange unit="page">537</citedRange>
+                    </monogr>
+                    <series>
+                        <title level="s">Aristoteles Latinus Codices</title>
+                        <biblScope unit="part">Pars Prior</biblScope>
+                    </series>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc xml:lang="en">
+            <listPrefixDef>
+                <prefixDef ident="persin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/persons.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;persin&quot;
+                        point to person elements in the project's persons.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="placin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/places.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;placin&quot;
+                        point to place elements in the project's places.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="contrin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/contributors.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;contrin&quot;
+                        point to person elements in the project's contributors.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="persin" matchPattern="([a-z]+)"
+                    replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/persons.html#$1">
+                    <p>Private URIs with the prefix "persin" can be converted to point to a fragment on
+                        the Personsindex page of the project Website.</p>
+                </prefixDef>
+                <prefixDef ident="placin" matchPattern="([a-z]+)"
+                    replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/places.html#$1">
+                    <p>Private URIs with the prefix "placin" can be converted to point to a fragment on
+                        the Placesindex page of the project Website.</p>
+                </prefixDef>
+                <prefixDef ident="contrin" matchPattern="([a-z]+)" replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/contributors.html#$1">
+                    <p>Private URIs with the prefix &quot;contrin&quot; can be converted
+                        to point to a fragment on the contributors page of the project
+                        Website.</p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc xml:lang="en">
+            <change when="2023-01-19" who="contrin:CVDM">Record created on 19 Jan 2023 by Courtney Van de Mosselaer.</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url=""/>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc xml:id="625" xml:lang="la">
+                    <msIdentifier xml:lang="fr">
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque nationale</repository>
+                        <idno>lat. 12953</idno>
+                        <altIdentifier type="former">
+                            <country/>
+                            <settlement/>
+                            <repository/>
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>
+                        <title type="desc">Corpus Vetustius</title>
+                    </head>
+                    <msContents>
+                        <msItem n="1">
+                            <locus from="001r" to="075r">ff. 1r-75r</locus>
+                            <title type="sub">Physica</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:jacobusveneticus">Jacobus Veneticus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="desc">Incipit ex abrupto in fine lib. III.</note>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="076r" to="165r">ff. 76r-165r</locus>
+                            <title type="sub">De Caelo</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:gerarduscremonensis">Gerardus Cremonensis</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="166r" to="195v">ff. 166r-195v</locus>
+                            <title type="sub">De Generatione</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:burgundiuspisanus">Burgundius Pisanus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="196r" to="231r">ff. 196r-231r</locus>
+                            <title type="sub">Meteorologica</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:alfredusanglicus">Alfredus Anglicus</persName>
+                            </respStmt>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:gerarduscremonensis">Gerardus Cremonensis</persName>
+                            </respStmt>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:henricusaristippus">Henricus Aristippus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="desc">Desunt sex capitula in libro II exeunte et decem in III ineunte.</note>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="232r" to="271r">ff. 232r-271r</locus>
+                            <title type="sub">De Anima</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:jacobusveneticus">Jacobus Veneticus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="271v" to="274r">ff. 271v-274r</locus>
+                            <title type="sub">De Causis</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:gerarduscremonensis">Gerardus Cremonensis</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="274r" to="275r">ff. 274r-275r</locus>
+                            <title type="sub">De Substantia Orbis</title>
+                            <author ref="persin:averroes">Averroes</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:michaelscotus">Michael Scotus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="desc">Initium tantum.</note>
+                        </msItem>
+                        <msItem n="8">
+                            <locus from="276r" to="282v">ff. 276r-282v</locus>
+                            <title type="sub">De Differentia Spiritus et Anime</title>
+                            <author ref="persin:costabenluca">Costa ben Luca</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:johanneshispalensis">Johannes Hispalensis</persName>
+                            </respStmt>
+                            <respStmt>
+                                <resp>Recensor</resp>
+                                <persName ref="persin:anonymus">Anonymus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="person">Recensio anonyma.</note>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="283r" to="285v">ff. 283r-285v</locus>
+                            <title type="sub">De Longitudine</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:jacobusveneticus">Jacobus Veneticus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="10">
+                            <locus from="285v" to="297r">ff. 285v-297r</locus>
+                            <title type="sub">De Sompno</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:anonymus">Anonymus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="11">
+                            <locus from="297r" to="310r">ff. 297r-310r</locus>
+                            <title type="sub">De Sensu et Sensato</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:anonymus">Anonymus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="12">
+                            <locus from="310r" to="314v">ff. 310r-314v</locus>
+                            <title type="sub">De Memoria</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:jacobusveneticus">Jacobus Veneticus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="13">
+                            <locus from="315r" to="334v">ff. 315r-334v</locus>
+                            <title type="sub">De Plantis</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:alfredusanglicus">Alfredus Anglicus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                        <msItem n="14">
+                            <locus from="336r" to="338v">ff. 336r-338v</locus>
+                            <title type="sub">Metaphysica Vetustissima</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:jacobusveneticus">Jacobus Veneticus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="desc">Explicit in lib. I, c. 3.</note>
+                        </msItem>
+                        <msItem n="15">
+                            <locus from="339r" to="383v">ff. 339r-383v</locus>
+                            <title type="sub">Metaphysica Nova</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:michaelscotus">Michael Scotus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="desc">Explicit in primis verbis lib. VII.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p/>
+                        <objectDesc form="codex">
+                            <supportDesc material="membr">
+                                <support>
+                                    <p><material>membraneus</material></p>
+                                </support>
+                                <extent>ff. 383
+                                    <dimensions scope="all" type="leaf" unit="mm">
+                                        <height>320</height>
+                                        <width>220</width>
+                                    </dimensions>
+                                </extent>
+                                <collation>
+                                    <p/>
+                                </collation>
+                                <condition>
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1 2" streams="1">
+                                    <p>longis lineis, libro De Causis excepto, quod est binis columnis</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p>Codex lautus a pluribus librariis eleganter exaratus.</p>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="paratext"><p>Tituli in summis paginis litteris alternatim rubris et caeruleis descripti usque ad <locus from="271v" to="271v">f. 271v</locus>; deinde in summis primis paginis tractatuum librorumque eos invenies.</p></decoNote>
+                            <decoNote type="initial"><p>Litterae initiales maximae imaginibus textum illustrantibus affabre ornatae; aliae autem auro variisque coloribus depictae.</p></decoNote>
+                        </decoDesc>
+                        <additions>
+                            <p>Emendationes nullae; glossae frequentes in marginibus ad eas praeparatis.</p>
+                            <p>Variae lectiones ex alia translatione (A. T.) et annotationes (<locus from="339r" to="339r">f. 339r</locus> et <locus from="340r" to="340r">f. 340r</locus>) coaevae de natura et ordine versionum Metaphysicorum inveniuntur.</p>
+                        </additions>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>
+                                <origDate notAfter="1300" notBefore="1201">saec. XIII</origDate>
+                                <origPlace/>
+                            </p>
+                        </origin>
+                        <provenance>
+                            <p>Codex olim <orgName>Sancti Mauri Fossatensis</orgName>, 1077, deinde <orgName>Sancti Germani de Pratis</orgName>, 604.</p>
+                        </provenance>
+                        <acquisition>
+                            <p/>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo xml:lang="en">
+                            <recordHist/>
+                        </adminInfo>
+                        <listBibl>
+                            <bibl xml:lang="en"/>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </listBibl>
+        </body>
+    </text>
+</TEI>

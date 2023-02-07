@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_enrich.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../Applications/Oxygen%20XML%20Editor/frameworks/tei/xml/tei/custom/schema/relaxng/tei_DALE_2.1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../Applications/Oxygen%20XML%20Editor/frameworks/tei/xml/tei/custom/schema/relaxng/tei_DALE_2.1.rng type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="AL643" xml:lang="la">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt xml:lang="en">
+                <title>A Digital Edition of Aristoteles Latinus Codices Pars Prior, 643</title>
+                <author>G. Lacombe, A. Birkenmajer, M. Dulong, A. Franceschini</author>
+                <sponsor>KU Leuven, Institute of Philosophy</sponsor>
+                <respStmt>
+                    <resp>Conversion to TEI P5 3.5.0 by</resp>
+                    <persName ref="contrin:CVDM">Courtney Van de Mosselaer</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt xml:lang="en">
+                <publisher>Aristoteles Latinus</publisher>
+                <availability n="cc-by" status="restricted">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/legalcode">Creative
+                        Commons Attribution 4.0 Unported (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Lacombe, G.</author>
+                        <author>Birkenmajer, A.</author>
+                        <author>Dulong, M.</author>
+                        <author>Franceschini, E.</author>
+                        <title level="m">Aristoteles Latinus Codices Pars Prior</title>
+                        <respStmt>
+                            <resp>Sponsor</resp>
+                            <orgName>Union Académique Internationale</orgName>
+                        </respStmt>
+                        <imprint>
+                            <publisher>La Libreria dello Stato</publisher>
+                            <pubPlace>Roma</pubPlace>
+                            <date when="1939">1939</date>
+                        </imprint>
+                        <extent>763 pp.</extent>
+                        <citedRange unit="page">546-547</citedRange>
+                    </monogr>
+                    <series>
+                        <title level="s">Aristoteles Latinus Codices</title>
+                        <biblScope unit="part">Pars Prior</biblScope>
+                    </series>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc xml:lang="en">
+            <listPrefixDef>
+                <prefixDef ident="persin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/persons.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;persin&quot;
+                        point to person elements in the project's persons.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="placin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/places.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;placin&quot;
+                        point to place elements in the project's places.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="contrin" matchPattern="([a-z]+)"
+                    replacementPattern="../index/contributors.xml#$1">
+                    <p>In the context of this project, private URIs with the prefix &quot;contrin&quot;
+                        point to person elements in the project's contributors.xml file.</p>
+                </prefixDef>
+                <prefixDef ident="persin" matchPattern="([a-z]+)"
+                    replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/persons.html#$1">
+                    <p>Private URIs with the prefix "persin" can be converted to point to a fragment on
+                        the Personsindex page of the project Website.</p>
+                </prefixDef>
+                <prefixDef ident="placin" matchPattern="([a-z]+)"
+                    replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/places.html#$1">
+                    <p>Private URIs with the prefix "placin" can be converted to point to a fragment on
+                        the Placesindex page of the project Website.</p>
+                </prefixDef>
+                <prefixDef ident="contrin" matchPattern="([a-z]+)" replacementPattern="https://hiw.kuleuven.be/apps/CMS/dale_test/indices/contributors.html#$1">
+                    <p>Private URIs with the prefix &quot;contrin&quot; can be converted
+                        to point to a fragment on the contributors page of the project
+                        Website.</p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc xml:lang="en">
+            <change when="2023-01-30" who="contrin:CVDM">Record created on 30 Jan 2023 by Courtney Van de Mosselaer.</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url=""/>
+    </facsimile>
+    <text>
+        <body>
+            <listBibl>
+                <msDesc xml:id="643" xml:lang="la">
+                    <msIdentifier xml:lang="fr">
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque nationale</repository>
+                        <idno>lat. 14718</idno>
+                        <altIdentifier type="former">
+                            <country/>
+                            <settlement/>
+                            <repository/>
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>
+                        <title type="desc"/>
+                    </head>
+                    <msContents>
+                        <msItem n="1">
+                            <locus from="001r" to="110v">ff. 1r-110v</locus>
+                            <title type="sub">Index alphabeticus in Corpus Vetustius operum naturalium Aristotelis et in Metaphysicam Novam</title>
+                            <author ref="persin:anonymus">Anonymus</author>
+                            <respStmt>
+                                <resp/>
+                                <persName ref=""></persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="desc">Praecedit tabula omnium capitulorum, qui in illis libris continentur, <locus from="001r" to="005r">ff. 1r-5r</locus>.</note> 
+                            <note type="desc">Index incipit: <quote>Abstrahere in li&lt;bro&gt; Phi&lt;sicorum&gt;</quote>, <locus from="005r" to="109v">ff. 5r-109v</locus>.</note>
+                            <note type="desc">Sequitur tabula vocabulorum, <locus from="109v" to="110v">ff. 109v-110v</locus>.</note>
+                            <note type="desc">Descissa sunt <locus from="111" to="123">ff. 111-123</locus>.</note>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="124r" to="186v">ff. 124r-186v</locus>
+                            <title type="sub">De Caelo</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:gerarduscremonensis">Gerardus Cremonensis</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="person">Translatio vetus.</note>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="186v" to="186v">f. 186v</locus>
+                            <title type="sub">De Differentia Spiritus et Anime</title>
+                            <author ref="persin:costabenluca">Costa ben Luca</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:johanneshispalensis">Johannes Hispalensis</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="person">Tr. Hispalensis.</note>
+                            <note type="desc">Initium tantum.</note>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="187r" to="225v">ff. 187r-225v</locus>
+                            <title type="sub">Meteorologica</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:alfredusanglicus">Alfredus Anglicus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type="person">Translatio vetus.</note>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="226r" to="293v">ff. 226r-293v</locus>
+                            <title type="sub">Metaphysica Nova</title>
+                            <author ref="persin:aristoteles">Aristoteles</author>
+                            <respStmt>
+                                <resp>Translator</resp>
+                                <persName ref="persin:michaelscotus">Michael Scotus</persName>
+                            </respStmt>
+                            <incipit/>
+                            <quote/>
+                            <explicit/>
+                            <colophon/>
+                            <note type=""/>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p/>
+                        <objectDesc form="codex">
+                            <supportDesc material="membr">
+                                <support>
+                                    <p><material>membraneus</material></p>
+                                </support>
+                                <extent>ff. &#8544; + 295
+                                    <dimensions scope="all" type="leaf" unit="mm">
+                                        <height>257</height>
+                                        <width>185</width>
+                                    </dimensions>
+                                </extent>
+                                <collation>
+                                    <p><locus from="111" to="123">ff. 111-123</locus> descissa, et eorum numeri in summis foliis vacuis <locus from="111" to="112">ff. 111-112</locus> scripti sunt.</p>
+                                </collation>
+                                <condition>
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1 2" streams="1">
+                                    <p>codex duas partes praebet: <locus from="001" to="110">ff. 1-110</locus> binis columnis et <locus from="124" to="180">ff. 124-180</locus> longis lineis</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p><locus from="001" to="110">ff. 1-110</locus> binis columnis manu saec. XIV exarata et <locus from="124" to="180">ff. 124-180</locus> autem longis lineis manu tenui nitidissima perscripta sunt.</p>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote type="paratext"><p><locus from="001" to="110">ff. 1-110</locus> in summis paginis titulos miniatos <locus from="004" to="019">ff. 4-19</locus> tantum exhibent; deinde atramento descriptos.</p></decoNote>
+                            <decoNote type="initial"><p><locus from="001" to="110">ff. 1-110</locus> nullas litteras initiales sed solum signa paragraphorum miniata ibi invenies.</p>
+                                <p><locus from="124" to="180">ff. 124-180</locus> litteris initialibus affabre depictis, textum illustrantibus, ornata; litterae initiales minores rubrae et caeruleae alternatae.</p></decoNote>
+                        </decoDesc>
+                        <additions>
+                            <p><locus from="001" to="110">ff. 1-110</locus> in marginibus annotationes nonnullae.</p>
+                            <p><locus from="124" to="180">ff. 124-180</locus> glossae rarae in latis marginibus, frequentiores ad Metheora.</p>
+                            <p>Textus Metaphysicae Novae optimus videtur.</p>
+                            <p><locus from="294" to="295">ff. 294-295</locus> codicis iuris canonici <date notAfter="1300" notBefore="1201">saec. XIII</date> fragmenta sunt.</p>
+                        </additions>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>
+                                <origDate notAfter="1400" notBefore="1201">saec. XIII-XIV</origDate>
+                                <origPlace/>
+                            </p>
+                        </origin>
+                        <provenance>
+                            <p><locus from="001r" to="001r">f. 1r</locus>: <quote>Iste liber est <orgName>sancti Victoris</orgName> <placeName>Parisiensis</placeName>. Quicumque eum furatus fuerit, vel celaverit, vel titulum istum deleverit, anathema sit. Amen</quote> et iterum: <quote>Jhesus. Maria. S. Victor. S. Augustinus</quote> et insignia monasterii.</p>
+                            <p>Olim <orgName>Sancti Victoris</orgName>, 872.</p>
+                        </provenance>
+                        <acquisition>
+                            <p/>
+                        </acquisition>
+                    </history>
+                    <additional>
+                        <adminInfo xml:lang="en">
+                            <recordHist/>
+                        </adminInfo>
+                        <listBibl>
+                            <bibl xml:lang="en"/>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </listBibl>
+        </body>
+    </text>
+</TEI>
